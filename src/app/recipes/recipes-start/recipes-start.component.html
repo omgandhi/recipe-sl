@@ -1,0 +1,12 @@
+<ng-template [ngIf]="firstVisit">
+  <h3>Hey there!</h3>
+  <p>This is an app where you can save your favourite recipes, and then add the ingredients for these recipes to a shopping list. </p>
+  <p>To get started, click on the green button to create a new recipe. You can also navigate to the shopping list from clicking the button on the header to add items manually. Clicking "Get Recipes" on the navbar will display a couple recipes that I found online. </p>
+  <p>Have fun!</p>
+</ng-template>
+<ng-template [ngIf]="!firstVisit">
+  <h3>Click on a recipe to view more</h3>
+  <button class="btn btn-primary" (click)="firstVisit = true">See welcome screen</button>
+</ng-template>
+<hr>
+<p>My name is <a href="http://omgandhi.com" target="_blank">Om Gandhi</a>, and I primarily built this app to practice my Angular development skills. While making this app, I learned everything from what a component is, to Angular forms and sending HTTP requests. I am grateful that you're reading this and checking out my work. Thanks, and I hope you enjoy. </p>
